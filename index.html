@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html  >
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    
+    
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="notMine/toastr.css" />
+    <link rel="stylesheet" href="stylin/style.css" />
+   
+    <!-- ANGULAR SPELLS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js"></script>
+    
+    <!-- FIREBASE SPELLS -->
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+    
+    <!-- MY SPELLS -->
+    <script src="notMine/toastr.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="controllers/mainController.js"></script>
+    <script src="controllers/listController.js"></script>
+    <script src="controllers/newRecipeController.js"></script>
+    <script src="controllers/viewController.js"></script>
+    <script src="controllers/editController.js"></script>
+    
+   
+  </head>
+
+  <body ng-app="rect" >
+    
+    <nav class="navbar navbar-default">
+    
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Receta</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        <li><a href="#list"><i class="fa fa-shield"></i> list</a></li>
+        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+      </ul>
+    
+  </nav>
+    
+    
+    
+    <div  class="container">
+      
+      <div ng-view></div>
+      
+    </div>
+    
+    
+  
+  
+    
+  
+  </body>
+
+
+
+
+</html>

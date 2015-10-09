@@ -1,0 +1,30 @@
+
+
+
+  <h2>List</h2>
+  
+
+
+<div class="row">
+  <div class="col-lg-2 col-xs-12">
+    <ul>
+      <li class="badge" ng-repeat="tag in list.tags">{{tag.TagName}}</li>
+    </ul>
+  </div>
+  
+  <div class="col-lg-10 col-xs-12">
+      <h4>Hey Dingus</h4>
+      <a href="#new" class="btn btn-primary">Make a New One</a>
+      
+      
+      <ul>
+        <li ng-repeat="rec in list.recipes" class="recipeTitle" ng-click="list.goToRecipe(rec.RecipeId)">
+          {{rec.RecipeName}}
+        </li>
+      </ul>
+      
+  </div>
+</div>
+
+
+
